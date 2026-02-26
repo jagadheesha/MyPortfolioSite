@@ -1,7 +1,6 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
